@@ -15,9 +15,14 @@ type category struct {
 }
 
 func main() {
+	router := Router()
+	http.ListenAndServe(":8080", router)
+}
+
+func Router() *mux.Router {
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/category/{ID}", getCategory)
-	http.ListenAndServe(":8080", router)
+	return router
 }
 
 func getCategory(w http.ResponseWriter, r *http.Request) {
