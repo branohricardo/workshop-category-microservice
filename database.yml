@@ -1,0 +1,11 @@
+development:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/src/github.com/branohricardo/workshop-category-microservice/workshop-category-microservice_development.sqlite
+
+test:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/src/github.com/branohricardo/workshop-category-microservice/workshop-category-microservice_test.sqlite
+
+production:
+  dialect: "sqlite3"
+  database: {{env "GOPATH" }}/src/github.com/branohricardo/workshop-category-microservice/workshop-category-microservice_production.sqlite

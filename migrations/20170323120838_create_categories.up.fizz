@@ -1,0 +1,5 @@
+create_table("categories", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("cat_id", "integer", {"unique": true})
+	t.Column("name", "text", {})
+})
