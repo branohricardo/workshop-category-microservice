@@ -1,6 +1,6 @@
 development:
   dialect: "mysql"
-  database: "category-microservice"
+  database: "category"
   port: "3306"
   user: "sodadb"
   password: "XCF45!"
