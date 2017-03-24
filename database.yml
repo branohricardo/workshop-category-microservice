@@ -1,7 +1,11 @@
 development:
-  dialect: "sqlite3"
-  database: {{env "GOPATH" }}/src/github.com/branohricardo/workshop-category-microservice/workshop-category-microservice_development.sqlite
-
+  dialect: "mysql"
+  database: "category-microservice"
+  port: "3306"
+  user: "sodadb"
+  password: "XCF45!"
+  host: "mobilebuildmaster.local"
+  
 test:
   dialect: "sqlite3"
   database: {{env "GOPATH" }}/src/github.com/branohricardo/workshop-category-microservice/workshop-category-microservice_test.sqlite
